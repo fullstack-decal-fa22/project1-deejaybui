@@ -1,0 +1,149 @@
+* {
+    cursor: crosshair;
+    font-family: 'Times New Roman', Times, serif;
+}
+#empty {
+    border-image: linear-gradient(45deg, rgb(214, 213, 213), rgb(51, 51, 51)) 1;
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 10px;
+    grid-column-gap: 10px;
+    border-radius: 80px;
+    text-align: center;
+}
+.full-border {
+    margin: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 30px;
+    font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 8px solid;
+	padding: 1rem;
+    border-image: linear-gradient(45deg, rgb(214, 213, 213), rgb(51, 51, 51)) 1;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: 280ms cubic-bezier(.4, 0, .2, 1), 15ms linear 30ms,270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    z-index: 0;
+}  
+
+.button:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+}
+
+.icons { 
+    margin-left: 60px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 10px;
+	display: grid;
+	place-items: center;
+}
+
+.About-Me {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(60px, auto);
+    color: black;
+    text-align: center;    
+}
+
+.box2 {
+    margin-right: 30px;
+}
+
+.About-Me > div {
+    background: #eee;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.Name {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.About-Me > div:nth-child(odd) {
+background: #ddd;
+}
+.About-Me > div:nth-child(3) {
+    background: transparent;
+}
+.title {
+    float: left;
+    padding: 20px 10px 0px 20px;
+}
+.position {
+    float: left;
+    padding: 20px 10px 0px 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+.work_experience {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.work_experience > div {
+    border-radius: 30px;
+    text-align: center;
+    background: #ddd;
+}
+.list {
+    float: left;
+}
+
+.Work {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center; 
+    background-color: white;
+}
+
+.Work > div {
+    border-radius: 30px;
+    text-align:left;
+    padding: 10px;
+    background: #ddd;
+    list-style-type: circle;
+}
